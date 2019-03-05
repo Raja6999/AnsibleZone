@@ -12,5 +12,5 @@
     debug: 
       msg: "{{ cmd_content.stderr}}"
     when: cmd_content.stderr != ""
-  -debug:
+  - debug:
      msg: "System {{ inventory_hostname}} has has uuid {{ ansible_product_uuid }}"
