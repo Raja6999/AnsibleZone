@@ -1,0 +1,7 @@
+---
+- hosts: yes
+  tasks:
+  - name: basic template with no dynamic content
+    template:
+      src: basic.j2
+      dest: /home/ansible/basic
