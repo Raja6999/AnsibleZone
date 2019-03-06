@@ -2,7 +2,7 @@
 # tasks file for common
 - name: update packages on ubuntu
   command: apt-get update
-  when: ansoible_os_family == "Debian"
+  when: ansible_os_family == "Debian"
 - name: Update packages on Redhat
   command: yum update
-  when: ansoible_os_family == "Redhat"
+  when: ansible_os_family == "Redhat"
